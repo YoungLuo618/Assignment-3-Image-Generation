@@ -38,7 +38,8 @@ python train_gan.py
 
 This will download MNIST dataset and train the GAN model
 
-Save:
+
+We can save:
 
 gan_trained.pth 
 
@@ -93,6 +94,7 @@ This will start the FastAPI service on port 8000.
 Open browser at http://127.0.0.1:8000/gan/grid to see the generated handwritten digit
 
 The Dockerfile is automatically installs dependencies from requirements.txt and then launches the app with uvicorn api.main:app --host 0.0.0.0 --port 8000.
+
 
 
 
