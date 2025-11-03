@@ -76,6 +76,23 @@ http://127.0.0.1:8000/gan/grid
 
 We’ll see the 4×4 grid of GAN-generated digits.
 
+———
+
+We can also run this project using Docker. 
+
+From the project root directory, build the image:
+
+docker build -t gan_api .
+
+
+Then run the container:
+
+docker run -p 8000:8000 gan_api
+
+This will start the FastAPI service on port 8000.
+Open browser at http://127.0.0.1:8000/gan/grid to see the generated handwritten digit
+
+The Dockerfile is automatically installs dependencies from requirements.txt and then launches the app with uvicorn api.main:app --host 0.0.0.0 --port 8000.
 
 
 
